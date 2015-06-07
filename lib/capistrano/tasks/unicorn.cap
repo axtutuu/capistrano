@@ -1,7 +1,7 @@
 namespace :unicorn do
   task :environment do
-    set :unicorn_pid, "{(2-1)path_to_unicorn_pid_fail_path}"
-    set :unicorn_config, "{(2-2)path_to_unicorn_fail}"
+    set :unicorn_pid, "{(2-1)path_to_unicorn_pid_file_path}"
+    set :unicorn_config, "{(2-2)path_to_unicorn_file}"
   end
 
   def start_unicorn

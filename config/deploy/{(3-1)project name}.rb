@@ -5,7 +5,7 @@ roles: %w{web app db}  #何サーバーの処理を書くか。今回は同じ�
 
 #sshでEC２に入るのに必要
 set :ssh_options, {
-  keys: %w({(3-4)Path to pem fail}),
+  keys: %w({(3-4)Path to pem file}),
   forward_agent: true,
   auth_methods: %w(publickey)
 }
