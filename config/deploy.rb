@@ -1,9 +1,9 @@
 # config valid only for Capistrano 3.1
 lock '3.1.0'
 
-set :application, '{(1-1)}project_name'
-set :repo_url, '{(1-2)path_to_git_url(ssh)}'
-set :deploy_to, '{(1-3)path_to_railsapp}'
+set :application, '{(1-1)Project name}'
+set :repo_url, '{(1-2)Path to git url(ssh)}'
+set :deploy_to, '{(1-3)Path to railsapp}'
 
 # SCMを指定
 set :scm, :git
@@ -27,10 +27,10 @@ set :bundle_without, %w(development test ruby).join(" ")
 
 # rbenvの設定
 set :rbenv_type, :user
-set :rbenv_ruby, '{(1-4)ruby_version}'
+set :rbenv_ruby, '{(1-4)Ruby version}'
 set :rbenv_map_bins, %w{rake gem bundle ruby rails}
 set :rbenv_roles, :all
-set :default_env, { path: "{(1-5)path_to_rbenv}" }
+set :default_env, { path: "{(1-5)Path to rbenv}" }
 
 namespace :deploy do
 
