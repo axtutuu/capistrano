@@ -4,7 +4,7 @@
 Nginx + Unicorn + Ruby on Rails + Aws
 
 
-##環境設定
+##設定
 
 * 1 Gemのインストール
 
